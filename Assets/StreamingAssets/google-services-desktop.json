@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "963948504844",
+    "firebase_url": "https://metic-wars.firebaseio.com",
+    "project_id": "metic-wars",
+    "storage_bucket": "metic-wars.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963948504844:android:114ed1bfb977a5aa",
+        "android_client_info": {
+          "package_name": "com.j2Games.Metic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "963948504844-dnnu4vhqoo7kgnp65veo0rkvn59sq839.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrWMEhGkDDVM0fGxgaovCKXyK8jZhxefE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "963948504844-dnnu4vhqoo7kgnp65veo0rkvn59sq839.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
