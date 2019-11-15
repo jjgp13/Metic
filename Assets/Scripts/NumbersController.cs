@@ -10,6 +10,9 @@ public class NumbersController : MonoBehaviour
     public int result;
     public Text resultText;
 
+    [Header("Reference to sprite with ball numebers")]
+    public Sprite[] ballNumbers = new Sprite[10];
+
     public void Awake() => _instance = this;
 
     // Start is called before the first frame update
@@ -21,7 +24,7 @@ public class NumbersController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void ClearResult()
