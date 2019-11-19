@@ -32,6 +32,7 @@ public class Enemy : MonoBehaviour
     {
         timeInField += Time.deltaTime;
         pointsForKill -= (int)timeInField * 10;
+        MoveEnemy();
     }
 
     /// <summary>
@@ -58,5 +59,10 @@ public class Enemy : MonoBehaviour
         Instantiate(explosion, transform.position, Quaternion.identity);
         ScoreController._instance.UpdateScore(pointsForKill);
         Destroy(gameObject);
+    }
+
+    private void MoveEnemy()
+    {
+        transform.Translate(Vector2.down * moveSpeed * Time.deltaTime);
     }
 }
