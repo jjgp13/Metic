@@ -31,7 +31,6 @@ public class EnemiesController : MonoBehaviour
         if (spawnTimer <= 0)
         {
             spawnTimer = timeToSpawnEnemy;
-            Debug.Log("Spawned");
             SpawnEnemy();
         }
     }
@@ -56,15 +55,14 @@ public class EnemiesController : MonoBehaviour
             int enemyResult = collision.gameObject.GetComponent<Enemy>().result;
             if (enemiesInField.ContainsKey(enemyResult))
             {
-                Debug.Log("Already in field");
                 Destroy(collision.gameObject);
             }
             else
             {
                 enemiesInField.Add(enemyResult, collision.gameObject);
-                Debug.Log(enemiesInField);
             }
         }
-        
     }
+
+
 }

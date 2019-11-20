@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour
     public int result;
     private int numberOfBalls;
     private float timeInField;
-    private int pointsForKill;
+    public int pointsForKill;
 
     [Header("Enemy speed")]
     public float moveSpeed;
@@ -31,7 +31,7 @@ public class Enemy : MonoBehaviour
     private void Update()
     {
         timeInField += Time.deltaTime;
-        pointsForKill -= (int)timeInField * 10;
+        pointsForKill -= (int)timeInField;
         MoveEnemy();
     }
 
@@ -56,7 +56,9 @@ public class Enemy : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        EnemiesController._instance.enemiesInField.Remove(result);
         Instantiate(explosion, transform.position, Quaternion.identity);
+        Destroy(collision.gameObject);
         ScoreController._instance.UpdateScore(pointsForKill);
         Destroy(gameObject);
     }

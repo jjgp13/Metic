@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 2389386106890880712}
   - component: {fileID: 2389386106890880708}
   - component: {fileID: 2389386106890880711}
-  - component: {fileID: 8794072182316296889}
+  - component: {fileID: -5768194426551707915}
   m_Layer: 0
   m_Name: AlienType2
   m_TagString: Enemy
@@ -219,7 +219,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.16
---- !u!50 &8794072182316296889
+--- !u!50 &-5768194426551707915
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
