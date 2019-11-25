@@ -11,7 +11,11 @@ public class NumbersController : MonoBehaviour
     public Text resultText;
 
     [Header("Reference to sprite with ball numebers")]
-    public Sprite[] ballNumbers = new Sprite[10];
+    public Sprite[] blueNumbers = new Sprite[10];
+    public Sprite[] redNumbers = new Sprite[10];
+    public Sprite[] greenNumbers = new Sprite[10];
+    public Sprite[] yellowNumbers = new Sprite[10];
+
 
     public void Awake() => _instance = this;
 

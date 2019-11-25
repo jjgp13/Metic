@@ -2,18 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour, IMovable, ISetable
 {
     public int result;
     private int numberOfBalls;
     private float timeInField;
-    public int pointsForKill;
+    private int pointsForKill;
 
     [Header("Enemy speed")]
     public float moveSpeed;
 
+    [Header("Enemy points multiplier")]
+    protected int pointsMultiplier;
+
     [Header("Reference to explosion particles")]
-    public GameObject explosion;
+    protected GameObject explosion;
 
     private void Awake()
     {
@@ -24,37 +27,23 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
-        SetEnemyResult();
+        SetEnemy();
         SetEnemyPoints();
     }
 
-    private void Update()
+    protected void Update()
     {
         timeInField += Time.deltaTime;
         pointsForKill -= (int)timeInField;
-        MoveEnemy();
+        EnemyMovement();
     }
 
-    /// <summary>
-    /// Only for enemy with sum
-    /// </summary>
-    private void SetEnemyResult()
+    protected void SetEnemyPoints()
     {
-        for (int i = 0; i < numberOfBalls; i++)
-        {
-            //From 1 to 9 -> 0 is 1 and 8 is nine
-            int tempNum = Random.Range(0, 9);
-            transform.GetChild(i).GetComponent<SpriteRenderer>().sprite = NumbersController._instance.ballNumbers[tempNum];
-            result += tempNum + 1;
-        }
+        pointsForKill = numberOfBalls * pointsMultiplier;
     }
 
-    private void SetEnemyPoints()
-    {
-        pointsForKill = numberOfBalls * 1000;
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    protected void OnCollisionEnter2D(Collision2D collision)
     {
         EnemiesController._instance.enemiesInField.Remove(result);
         Instantiate(explosion, transform.position, Quaternion.identity);
@@ -63,7 +52,21 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void MoveEnemy()
+    /// <summary>
+    /// Only for enemy with sum
+    /// </summary>
+    public void SetEnemy()
+    {
+        for (int i = 0; i < numberOfBalls; i++)
+        {
+            //From 1 to 9 -> 0 is 1 and 8 is nine
+            int tempNum = Random.Range(0, 9);
+            transform.GetChild(i).GetComponent<SpriteRenderer>().sprite = NumbersController._instance.blueNumbers[tempNum];
+            result += tempNum + 1;
+        }
+    }
+
+    public void EnemyMovement()
     {
         transform.Translate(Vector2.down * moveSpeed * Time.deltaTime);
     }
