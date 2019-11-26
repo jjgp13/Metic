@@ -38,13 +38,13 @@ public class EnemiesController : MonoBehaviour
     private void SpawnEnemy()
     {
         int enemyType = Random.Range(0, enemyTypes.Length);
-        Instantiate(enemyTypes[enemyType], SpawnPosition(), Quaternion.identity);
+        Instantiate(enemyTypes[1], SpawnPosition(), Quaternion.identity);
     }
 
     private Vector2 SpawnPosition()
     {
         float xPos = Random.Range(-2.4f, 2.4f);
-        float yPos = 6.25f;
+        float yPos = Random.Range(2f, 4.25f);
         return new Vector2(xPos, yPos);
     }
 
