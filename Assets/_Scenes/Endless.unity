@@ -2114,12 +2114,12 @@ PrefabInstance:
     - target: {fileID: 5494778635922520325, guid: 290b773100df14c44aceb678fb620c98,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.14871237
+      value: 1.75
       objectReference: {fileID: 0}
     - target: {fileID: 5494778635922520325, guid: 290b773100df14c44aceb678fb620c98,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.2673871
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5494778635922520325, guid: 290b773100df14c44aceb678fb620c98,
         type: 3}
@@ -2165,6 +2165,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691866694680008390, guid: 290b773100df14c44aceb678fb620c98,
+        type: 3}
+      propertyPath: movePositions.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691866694680008390, guid: 290b773100df14c44aceb678fb620c98,
+        type: 3}
+      propertyPath: movePositions.Array.data[0].y
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691866694680008390, guid: 290b773100df14c44aceb678fb620c98,
+        type: 3}
+      propertyPath: movePositions.Array.data[1].x
+      value: 1.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691866694680008390, guid: 290b773100df14c44aceb678fb620c98,
+        type: 3}
+      propertyPath: movePositions.Array.data[2].x
+      value: -1.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691866694680008390, guid: 290b773100df14c44aceb678fb620c98,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691866694680008390, guid: 290b773100df14c44aceb678fb620c98,
+        type: 3}
+      propertyPath: distanceThreshold
+      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 290b773100df14c44aceb678fb620c98, type: 3}
