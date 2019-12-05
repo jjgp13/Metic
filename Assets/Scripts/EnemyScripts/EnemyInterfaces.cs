@@ -9,5 +9,5 @@ public interface IMovable
     
 public interface ISetable
 {
-    void SetEnemy();
+    void SetEnemyResult();
 }

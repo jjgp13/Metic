@@ -4,17 +4,12 @@ using UnityEngine;
 
 public class AlienType4 : Enemy, IMovable, ISetable
 {
-    public enum Side
-    {
-        Left,
-        Right
-    }
-
+    [Header("Alien Type 4 properties")]
     public Side MoveTowards;
 
     private void Start()
     {
-        SetEnemy();
+        SetEnemyResult();
         SetEnemyPoints();
         if(transform.position.x > 0)
             MoveTowards = Side.Left;
@@ -32,7 +27,7 @@ public class AlienType4 : Enemy, IMovable, ISetable
     /// <summary>
     /// Only for enemy with sum
     /// </summary>
-    public void SetEnemy()
+    public void SetEnemyResult()
     {
         int tempNum = Random.Range(0, 9);
         transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = NumbersController._instance.redNumbers[tempNum];

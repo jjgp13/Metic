@@ -7,7 +7,7 @@ public class AlienType2 : Enemy, IMovable, ISetable
 
     protected void Start()
     {
-        SetEnemy();
+        SetEnemyResult();
         SetEnemyPoints();
     }
 
@@ -21,7 +21,7 @@ public class AlienType2 : Enemy, IMovable, ISetable
     /// <summary>
     /// Only for enemy with sum
     /// </summary>
-    public void SetEnemy()
+    public void SetEnemyResult()
     {
         for (int i = 0; i < numberOfBalls; i++)
         {

@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [Header("For life")]
+    public int lifes;
+    public GameObject[] lifeSprites;
 
     public float shipSpeed;
-
     [Header("For shoot")]
     public Transform spawnBulletPosition;
     public GameObject bulletPrefab;
@@ -37,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-
+            //Move Towards the closest enemy
         }
     }
 
@@ -52,5 +54,19 @@ public class PlayerMovement : MonoBehaviour
     private void Shoot()
     {
         Instantiate(bulletPrefab, spawnBulletPosition.position, Quaternion.identity);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            if(lifes < 0)
+            {
+                Debug.Log("You're dead");
+                return;
+            }
+            lifes--;
+            lifeSprites[lifes].SetActive(false);
+        }
     }
 }

@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class AlienType5 : Enemy, IMovable, ISetable
 {
-    public Vector2 boundaryMovement;
-    public Vector2 pointToMove;
+    [Header("Alien Type 5 properties")]
+    public Vector2 xMovLimit;
+    public Vector2 yMovLimit;
+    private Vector2 pointToMove;
     public float distanceThreshold;
     private int remainingPoints;
 
     private void Start()
     {
-        SetEnemy();
+        SetEnemyResult();
         SetEnemyPoints();
-        pointToMove = 
+        pointToMove = SetRandomPositionToMove();
         remainingPoints = 3;
     }
 
@@ -24,14 +26,15 @@ public class AlienType5 : Enemy, IMovable, ISetable
         EnemyMovement();
     }
 
-    public void SetEnemy()
+    public void SetEnemyResult()
     {
         result = 1;
         for (int i = 0; i < numberOfBalls; i++)
         {
-            //From 1 to 9 -> 0 is 1 and 8 is nine
+            //From 1 to 9 -> 0 is 1 and 8 is 9
             int tempNum = Random.Range(0, 9);
             transform.GetChild(i).GetComponent<SpriteRenderer>().sprite = NumbersController._instance.greenNumbers[tempNum];
+            //Add one unit to result
             result *= tempNum + 1;
         }
     }
@@ -54,7 +57,7 @@ public class AlienType5 : Enemy, IMovable, ISetable
         }
         else
         {
-            direction = pointToMove - (Vector2)transform.position;
+            direction = GetPlayerPosition() - (Vector2)transform.position;
             MoveEnemy(direction);
         }
     }
@@ -66,6 +69,6 @@ public class AlienType5 : Enemy, IMovable, ISetable
 
     private Vector2 SetRandomPositionToMove()
     {
-        return new Vector2(Random.Range(-boundaryMovement.x, boundaryMovement.x), Random.Range(-boundaryMovement.y, boundaryMovement.y));
+        return new Vector2(Random.Range(xMovLimit.x, xMovLimit.y), Random.Range(yMovLimit.x, yMovLimit.y));
     }
 }

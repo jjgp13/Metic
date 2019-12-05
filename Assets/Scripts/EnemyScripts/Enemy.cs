@@ -8,15 +8,18 @@ public class Enemy : MonoBehaviour
     protected int numberOfBalls;
     protected float timeInField;
     protected int pointsForKill;
+    protected Transform playerPosition;
 
-    [Header("Enemy speed")]
+    public enum Side
+    {
+        Left,
+        Right
+    }
+
+    [Header("Inherited properties")]
     public float moveSpeed;
-
-    [Header("Enemy points multiplier")]
     public int pointsMultiplier;
-
-    [Header("Reference to explosion particles")]
-    public GameObject explosion;
+    public GameObject enemyExplosion;
 
 
     protected void Awake()
@@ -24,6 +27,8 @@ public class Enemy : MonoBehaviour
         result = 0;
         numberOfBalls = transform.childCount;
         timeInField = 0;
+        //Get position of the player
+        playerPosition = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
     protected void SetEnemyPoints()
@@ -36,10 +41,23 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject.CompareTag("Bullet"))
         {
             EnemiesController._instance.enemiesInField.Remove(result);
-            Instantiate(explosion, transform.position, Quaternion.identity);
+            Instantiate(enemyExplosion, transform.position, Quaternion.identity);
             Destroy(collision.gameObject);
             ScoreController._instance.UpdateScore(pointsForKill);
             Destroy(gameObject);
         }
+
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            EnemiesController._instance.enemiesInField.Remove(result);
+            Instantiate(enemyExplosion, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+        }
+    }
+
+
+    protected Vector2 GetPlayerPosition()
+    {
+        return playerPosition.position;
     }
 }

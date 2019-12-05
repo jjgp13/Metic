@@ -25,12 +25,6 @@ public class NumbersController : MonoBehaviour
         result = -1;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void ClearResult()
     {
         result = -1;

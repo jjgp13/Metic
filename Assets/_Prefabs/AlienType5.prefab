@@ -120,7 +120,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.16
+  m_Radius: 0.2
 --- !u!50 &4992510346242056888
 Rigidbody2D:
   serializedVersion: 4
@@ -157,8 +157,11 @@ MonoBehaviour:
   result: 0
   moveSpeed: 1
   pointsMultiplier: 1500
-  explosion: {fileID: 7802879712116143874, guid: ab5382c68bf4c2d43b87c5d834be4d98,
+  enemyExplosion: {fileID: 7802879712116143874, guid: ab5382c68bf4c2d43b87c5d834be4d98,
     type: 3}
+  xMovLimit: {x: -2, y: 2}
+  yMovLimit: {x: 0.5, y: 4}
+  distanceThreshold: 0.01
 --- !u!1 &5494778636673638303
 GameObject:
   m_ObjectHideFlags: 0
