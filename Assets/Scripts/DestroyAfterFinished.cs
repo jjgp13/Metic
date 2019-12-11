@@ -5,7 +5,7 @@ using UnityEngine;
 public class DestroyAfterFinished : MonoBehaviour
 {
 
-    public int timeToDestroy;
+    public float timeToDestroy;
     // Start is called before the first frame update
     void Start()
     {

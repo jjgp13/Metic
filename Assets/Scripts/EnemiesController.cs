@@ -31,20 +31,20 @@ public class EnemiesController : MonoBehaviour
         if (spawnTimer <= 0)
         {
             spawnTimer = timeToSpawnEnemy;
-            //SpawnEnemy();
+            SpawnEnemy();
         }
     }
 
     private void SpawnEnemy()
     {
-        int enemyType = Random.Range(0, enemyTypes.Length);
-        Instantiate(enemyTypes[1], SpawnPosition(), Quaternion.identity);
+        //int enemyType = Random.Range(0, enemyTypes.Length);
+        Instantiate(enemyTypes[0], SpawnPosition(), Quaternion.identity);
     }
 
     private Vector2 SpawnPosition()
     {
         float xPos = Random.Range(-2.4f, 2.4f);
-        float yPos = Random.Range(2f, 4.25f);
+        float yPos = Random.Range(4f, 4.25f);
         return new Vector2(xPos, yPos);
     }
 
@@ -61,6 +61,16 @@ public class EnemiesController : MonoBehaviour
             {
                 enemiesInField.Add(enemyResult, collision.gameObject);
             }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            int enemyResult = collision.gameObject.GetComponent<Enemy>().result;
+            enemiesInField.Remove(enemyResult);
+            Destroy(collision.gameObject);
         }
     }
 }

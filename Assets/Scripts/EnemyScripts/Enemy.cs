@@ -55,9 +55,13 @@ public class Enemy : MonoBehaviour
         }
     }
 
-
+    /// <summary>
+    /// Get the position of the player
+    /// </summary>
+    /// <returns>2D vector with player's position</returns>
     protected Vector2 GetPlayerPosition()
     {
+        Debug.Log(playerPosition);
         return playerPosition.position;
     }
 }

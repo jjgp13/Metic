@@ -60,13 +60,15 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            if(lifes < 0)
+            if(lifes <= 0)
             {
                 Debug.Log("You're dead");
+                Destroy(collision.gameObject);
+                Destroy(gameObject);
                 return;
             }
             lifes--;
-            lifeSprites[lifes].SetActive(false);
+            lifeSprites[lifes].GetComponent<Animator>().SetTrigger("LifeLost");
         }
     }
 }
