@@ -13,8 +13,11 @@ public class AlienType1 : Enemy, IMovable, ISetable
 
     protected void Update()
     {
-        timeInField += Time.deltaTime;
-        pointsForKill -= (int)timeInField;
+        if (isVisible)
+        {
+            timeInField += Time.deltaTime;
+            pointsForKill -= (int)timeInField;
+        }
         EnemyMovement();
     }
 
@@ -39,10 +42,9 @@ public class AlienType1 : Enemy, IMovable, ISetable
             transform.Translate(Vector2.down * moveSpeed * Time.deltaTime);
         else
         {
-            Vector2 dir = GetPlayerPosition();
+            Vector2 dir = GetPlayerPosition() - (Vector2)transform.position;
             transform.Translate(dir.normalized * moveSpeed * Time.deltaTime);
         }
-            
     }
 
 }

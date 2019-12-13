@@ -7,12 +7,14 @@ public class PlayerMovement : MonoBehaviour
     [Header("For life")]
     public int lifes;
     public GameObject[] lifeSprites;
-
+    [Header("Ship speed movement")]
     public float shipSpeed;
     [Header("For shoot")]
     public Transform spawnBulletPosition;
     public GameObject bulletPrefab;
     public float shootRange;
+    [Header("For dead")]
+    public GameObject playerExplosion;
 
 
     // Update is called once per frame
@@ -62,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if(lifes <= 0)
             {
-                Debug.Log("You're dead");
+                Instantiate(playerExplosion, transform.position, Quaternion.identity);
                 Destroy(collision.gameObject);
                 Destroy(gameObject);
                 return;

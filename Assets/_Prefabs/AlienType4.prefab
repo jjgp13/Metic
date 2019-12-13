@@ -402,7 +402,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   result: 0
   moveSpeed: 0.1
-  pointsMultiplier: 1000
+  pointsMultiplier: 4000
+  pointsForKill: 0
+  isVisible: 0
   enemyExplosion: {fileID: 7802879712116143874, guid: ab5382c68bf4c2d43b87c5d834be4d98,
     type: 3}
   MoveTowards: 0
