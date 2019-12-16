@@ -55,11 +55,10 @@ public class Enemy : MonoBehaviour
             pointsText.text = pointsForKill.ToString();
             TextMeshProUGUI inst = Instantiate(pointsText, canvas.transform, false);
             inst.rectTransform.position = screenPoint;
-            Debug.Log(screenPoint);
             EnemiesController._instance.enemiesInField.Remove(result);
             Instantiate(enemyExplosion, transform.position, Quaternion.identity);
             Destroy(collision.gameObject);
-            ScoreController._instance.UpdateScore(pointsForKill);
+            ScoreController._instance.enemyDestroy = true;
             Destroy(gameObject);
         }
 
