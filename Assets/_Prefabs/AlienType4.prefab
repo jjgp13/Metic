@@ -407,6 +407,9 @@ MonoBehaviour:
   isVisible: 0
   enemyExplosion: {fileID: 7802879712116143874, guid: ab5382c68bf4c2d43b87c5d834be4d98,
     type: 3}
+  pointsText: {fileID: 3427097577937300879, guid: ab884f40c67221243b00dc4a6a8bc899,
+    type: 3}
+  canvas: {fileID: 0}
   MoveTowards: 0
 --- !u!1 &6311956114022359989
 GameObject:

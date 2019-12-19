@@ -12,23 +12,21 @@ public class ScoreController : MonoBehaviour
 
     public int score;
     public TextMeshProUGUI scoreText;
-
-    public bool enemyDestroy;
+    private int counter;
 
     private void Start()
     {
         score = 0;
         scoreText.text = "0000000";
-        enemyDestroy = false;
-        StartCoroutine(UpdateScore(10000));
+        counter = 100000;
     }
 
     private void Update()
     {
-        if (enemyDestroy)
+        if (counter < 0)
         {
-            UpdateScore(1000);
-            enemyDestroy = false;
+            scoreText.GetComponent<Animator>().SetTrigger("goal");
+            counter = 100000;
         }
     }
 
@@ -36,12 +34,29 @@ public class ScoreController : MonoBehaviour
     /// Update score UI when enemy is killed
     /// </summary>
     /// <param name="points">Number of point to increse</param>
-    IEnumerator UpdateScore(int points)
+    public void UpdateScore(int points)
     {
-        for (int i = 1; i <= points; i++)
+        StartCoroutine(IncreaseScore(points));
+    }
+
+    IEnumerator IncreaseScore(int points)
+    {
+        while (points >= 0)
         {
-            score+=10;
+            if (points - 50 > 0)
+            {
+                points -= 50;
+                score += 50;
+                counter -= 50;
+            }
+            else
+            {
+                points--;
+                score++;
+                counter--;
+            }
             scoreText.text = score.ToString("0000000");
+            
             yield return null;
         }
     }

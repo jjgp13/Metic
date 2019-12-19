@@ -11,10 +11,13 @@ public class AlienType2 : Enemy, IMovable, ISetable
         SetEnemyPoints();
     }
 
-    protected void Update()
+    private void Update()
     {
-        timeInField += Time.deltaTime;
-        pointsForKill -= (int)timeInField;
+        if (isVisible && pointsForKill > 100)
+        {
+            timeInField += Time.deltaTime;
+            pointsForKill -= (int)timeInField;
+        }
         EnemyMovement();
     }
 
