@@ -5,7 +5,7 @@ using TMPro;
 
 public class Enemy : MonoBehaviour
 {
-    public int result;
+    public int result = 0;
     protected int numberOfBalls;
     protected float timeInField;
     
