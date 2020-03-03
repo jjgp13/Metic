@@ -31,7 +31,7 @@ public class EnemiesController : MonoBehaviour
         if (spawnTimer <= 0)
         {
             spawnTimer = timeToSpawnEnemy;
-            SpawnEnemy();
+            //SpawnEnemy();
         }
     }
 
