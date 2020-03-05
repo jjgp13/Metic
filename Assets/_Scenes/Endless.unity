@@ -817,14 +817,14 @@ SpringJoint2D:
   m_Enabled: 1
   serializedVersion: 4
   m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 1743770349}
+  m_ConnectedRigidBody: {fileID: 0}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.20000029
+  m_Distance: 7.31242
   m_DampingRatio: 0
   m_Frequency: 1
 --- !u!1 &654985491
@@ -995,12 +995,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1869137894}
   m_PrefabAsset: {fileID: 0}
---- !u!50 &694933592 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 2809520066121663942, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1869137894}
-  m_PrefabAsset: {fileID: 0}
 --- !u!231 &694933593
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -1104,12 +1098,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1869137894}
   m_PrefabAsset: {fileID: 0}
---- !u!50 &733779119 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 3977965044271577874, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1869137894}
-  m_PrefabAsset: {fileID: 0}
 --- !u!232 &733779120
 DistanceJoint2D:
   m_ObjectHideFlags: 0
@@ -1120,14 +1108,14 @@ DistanceJoint2D:
   m_Enabled: 1
   serializedVersion: 4
   m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 1722402759}
+  m_ConnectedRigidBody: {fileID: 0}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.19999981
+  m_Distance: 7.1126604
   m_MaxDistanceOnly: 0
 --- !u!1 &735407854 stripped
 GameObject:
@@ -1563,16 +1551,16 @@ SpringJoint2D:
   m_Enabled: 1
   serializedVersion: 4
   m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 1783402053}
+  m_ConnectedRigidBody: {fileID: 738571471}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
-  m_AutoConfigureDistance: 1
+  m_AutoConfigureDistance: 0
   m_Distance: 0.25
-  m_DampingRatio: 0
-  m_Frequency: 1.45
+  m_DampingRatio: 0.42
+  m_Frequency: 10
 --- !u!114 &955041004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1668,12 +1656,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1869137894}
   m_PrefabAsset: {fileID: 0}
---- !u!50 &994191744 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 2966066472682345188, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1869137894}
-  m_PrefabAsset: {fileID: 0}
 --- !u!231 &994191745
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -1684,14 +1666,14 @@ SpringJoint2D:
   m_Enabled: 1
   serializedVersion: 4
   m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 810971531}
+  m_ConnectedRigidBody: {fileID: 0}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.20000029
+  m_Distance: 6.912915
   m_DampingRatio: 0
   m_Frequency: 1
 --- !u!1 &995562415
@@ -1986,37 +1968,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1168360016}
   m_CullTransparentMesh: 0
---- !u!1 &1232782154 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 558677514973276499, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1869137894}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &1232782155 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 2809520066121663942, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1869137894}
-  m_PrefabAsset: {fileID: 0}
---- !u!232 &1232782156
-DistanceJoint2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1232782154}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 1535124636}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0}
-  m_AutoConfigureDistance: 1
-  m_Distance: 0.20000029
-  m_MaxDistanceOnly: 0
 --- !u!1 &1279274152
 GameObject:
   m_ObjectHideFlags: 0
@@ -2225,37 +2176,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1288957781}
   m_CullTransparentMesh: 0
---- !u!1 &1310282993 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1386012034423173993, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1869137894}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &1310282994 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 9097853879684885538, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1869137894}
-  m_PrefabAsset: {fileID: 0}
---- !u!232 &1310282995
-DistanceJoint2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1310282993}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 738571471}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0}
-  m_AutoConfigureDistance: 1
-  m_Distance: 0.25
-  m_MaxDistanceOnly: 0
 --- !u!1 &1347635195
 GameObject:
   m_ObjectHideFlags: 0
@@ -2903,37 +2823,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1513409616}
   m_CullTransparentMesh: 0
---- !u!1 &1535124635 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3537086150707558423, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1869137894}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &1535124636 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 4335340027643332512, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1869137894}
-  m_PrefabAsset: {fileID: 0}
---- !u!232 &1535124637
-DistanceJoint2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1535124635}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 1310282994}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0}
-  m_AutoConfigureDistance: 1
-  m_Distance: 0.19999981
-  m_MaxDistanceOnly: 0
 --- !u!1 &1683423098
 GameObject:
   m_ObjectHideFlags: 0
@@ -2964,37 +2853,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1722402758 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8956087787660924687, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1869137894}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &1722402759 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 2966066472682345188, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1869137894}
-  m_PrefabAsset: {fileID: 0}
---- !u!232 &1722402760
-DistanceJoint2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1722402758}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 1959478985}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0}
-  m_AutoConfigureDistance: 1
-  m_Distance: 0.20000029
-  m_MaxDistanceOnly: 0
 --- !u!1 &1829526268
 GameObject:
   m_ObjectHideFlags: 0
@@ -3681,12 +3539,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1869137894}
   m_PrefabAsset: {fileID: 0}
---- !u!50 &1959478985 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 7072687724409526222, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1869137894}
-  m_PrefabAsset: {fileID: 0}
 --- !u!232 &1959478986
 DistanceJoint2D:
   m_ObjectHideFlags: 0
@@ -4089,31 +3941,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983944979}
   m_CullTransparentMesh: 0
---- !u!1 &1984883047 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4369069321813219531, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1869137894}
-  m_PrefabAsset: {fileID: 0}
---- !u!232 &1984883049
-DistanceJoint2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1984883047}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 733779119}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0}
-  m_AutoConfigureDistance: 1
-  m_Distance: 0.20000029
-  m_MaxDistanceOnly: 0
 --- !u!1 &2008537131
 GameObject:
   m_ObjectHideFlags: 0
@@ -4237,14 +4064,14 @@ DistanceJoint2D:
   m_Enabled: 1
   serializedVersion: 4
   m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 1232782155}
+  m_ConnectedRigidBody: {fileID: 0}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.19999981
+  m_Distance: 6.114101
   m_MaxDistanceOnly: 0
 --- !u!1 &2033657111
 GameObject:

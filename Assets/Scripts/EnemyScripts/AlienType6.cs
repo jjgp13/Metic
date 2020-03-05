@@ -96,8 +96,6 @@ public class AlienType6 : Enemy, IMovable, ISetable
             result += val + 1;
             transform.GetChild(i).GetComponent<SpriteRenderer>().sprite = NumbersController._instance.blueNumbers[val];
         }
-        transform.GetChild(numberOfBalls - 1).GetComponent<Rigidbody2D>().mass = 20f;
-        transform.GetChild(numberOfBalls - 1).GetComponent<Rigidbody2D>().angularDrag = 0.06f;
     }
 
 }

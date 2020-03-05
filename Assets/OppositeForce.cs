@@ -18,6 +18,7 @@ public class OppositeForce : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        rb.velocity = rb.position - parent.movePoint;
+        Vector2 dir = rb.position - parent.movePoint;
+        rb.velocity = dir.normalized;
     }
 }
