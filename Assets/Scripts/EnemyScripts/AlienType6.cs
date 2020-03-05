@@ -12,9 +12,11 @@ public class AlienType6 : Enemy, IMovable, ISetable
     [SerializeField]
     public Vector2 movePoint;
     public float rotationSpeed;
+    private Rigidbody2D rb;
     
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         SetEnemyResult();
         SetPointsToMove(Random.Range(5, 10));
 
@@ -42,9 +44,14 @@ public class AlienType6 : Enemy, IMovable, ISetable
 
     public void EnemyMovement()
     {
+        //moving with transform
         transform.Translate(0, Vector2.down.y * moveSpeed * Time.deltaTime, 0f);
-        //Vector2 dir = 
-        //GetComponent<Rigidbody2D>().MovePosition((Vector2)transform.position + Vector2.down * moveSpeed * Time.deltaTime);
+
+        //moving with rb
+        //Vector2 dir = movePoint - (Vector2)transform.position;
+        //rb.MovePosition(rb.position + dir.normalized * moveSpeed * Time.deltaTime);
+        
+        
         //If there are points in the Queue, select one and go to it.
         //This will give the player change to make the calculus to destroy the enemy
         if (movePoints.Count > 0)
@@ -68,7 +75,11 @@ public class AlienType6 : Enemy, IMovable, ISetable
         float angle = Vector2.Angle(dir, Vector2.down);
         if (transform.position.x > point.x)
             angle *= -1;
+        //rotating with transform
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, 0, angle), rotationSpeed * Time.deltaTime);
+
+        //Rotating with rb
+        //rb.MoveRotation(Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, 0, angle), rotationSpeed * Time.deltaTime));
     }
 
     private void SetPointsToMove(int pointsCount)
@@ -82,7 +93,7 @@ public class AlienType6 : Enemy, IMovable, ISetable
         for (int i = 0; i < numberOfBalls; i++)
         {
             int val = Random.Range(0, 9);
-            result += val;
+            result += val + 1;
             transform.GetChild(i).GetComponent<SpriteRenderer>().sprite = NumbersController._instance.blueNumbers[val];
         }
         transform.GetChild(numberOfBalls - 1).GetComponent<Rigidbody2D>().mass = 20f;

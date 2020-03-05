@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2374418636002356173}
   - component: {fileID: 96428226504164096}
   - component: {fileID: 3977965044271577874}
-  - component: {fileID: 6341957987121429740}
+  - component: {fileID: 88830518184026835}
   m_Layer: 0
   m_Name: BlueBalls_0 (8)
   m_TagString: Untagged
@@ -105,8 +105,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!233 &6341957987121429740
-HingeJoint2D:
+--- !u!231 &88830518184026835
+SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -118,17 +118,13 @@ HingeJoint2D:
   m_ConnectedRigidBody: {fileID: 2966066472682345188}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0, y: -0.1}
-  m_ConnectedAnchor: {x: 0, y: 0.100000024}
-  m_UseMotor: 0
-  m_Motor:
-    m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
-  m_UseLimits: 0
-  m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_AutoConfigureDistance: 1
+  m_Distance: 0.20000005
+  m_DampingRatio: 0
+  m_Frequency: 1
 --- !u!1 &558677514973276499
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,7 +136,7 @@ GameObject:
   - component: {fileID: 1239872792853994991}
   - component: {fileID: 7596371901881739248}
   - component: {fileID: 2809520066121663942}
-  - component: {fileID: 8225915585790948800}
+  - component: {fileID: 8047576126964789730}
   m_Layer: 0
   m_Name: BlueBalls_0 (2)
   m_TagString: Untagged
@@ -234,8 +230,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!233 &8225915585790948800
-HingeJoint2D:
+--- !u!231 &8047576126964789730
+SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -247,17 +243,13 @@ HingeJoint2D:
   m_ConnectedRigidBody: {fileID: 4335340027643332512}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0, y: -0.1}
-  m_ConnectedAnchor: {x: 0, y: 0.099999964}
-  m_UseMotor: 0
-  m_Motor:
-    m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
-  m_UseLimits: 0
-  m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_AutoConfigureDistance: 1
+  m_Distance: 0.19999999
+  m_DampingRatio: 0
+  m_Frequency: 1
 --- !u!1 &1386012034423173993
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,7 +261,7 @@ GameObject:
   - component: {fileID: 7380735365486318559}
   - component: {fileID: 4315196731566848638}
   - component: {fileID: 9097853879684885538}
-  - component: {fileID: 8255650040490361135}
+  - component: {fileID: 3386127289718234640}
   m_Layer: 0
   m_Name: BlueBalls_0
   m_TagString: Untagged
@@ -363,8 +355,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!233 &8255650040490361135
-HingeJoint2D:
+--- !u!231 &3386127289718234640
+SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -373,20 +365,16 @@ HingeJoint2D:
   m_Enabled: 1
   serializedVersion: 4
   m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 0}
+  m_ConnectedRigidBody: {fileID: 1317889210928119720}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 1
+  m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0.25}
-  m_UseMotor: 0
-  m_Motor:
-    m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
-  m_UseLimits: 0
-  m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_AutoConfigureDistance: 1
+  m_Distance: 0.25
+  m_DampingRatio: 0
+  m_Frequency: 1
 --- !u!1 &1742252082149790877
 GameObject:
   m_ObjectHideFlags: 0
@@ -398,7 +386,7 @@ GameObject:
   - component: {fileID: 67663914609403430}
   - component: {fileID: 4609411759266274573}
   - component: {fileID: 7072687724409526222}
-  - component: {fileID: 1123215462464111800}
+  - component: {fileID: 4749178417901776291}
   m_Layer: 0
   m_Name: BlueBalls_0 (6)
   m_TagString: Untagged
@@ -492,8 +480,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!233 &1123215462464111800
-HingeJoint2D:
+--- !u!231 &4749178417901776291
+SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -505,17 +493,13 @@ HingeJoint2D:
   m_ConnectedRigidBody: {fileID: 2311354592437403736}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0, y: -0.1}
-  m_ConnectedAnchor: {x: 0, y: 0.100000024}
-  m_UseMotor: 0
-  m_Motor:
-    m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
-  m_UseLimits: 0
-  m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_AutoConfigureDistance: 1
+  m_Distance: 0.20000005
+  m_DampingRatio: 0
+  m_Frequency: 1
 --- !u!1 &3537086150707558423
 GameObject:
   m_ObjectHideFlags: 0
@@ -527,7 +511,7 @@ GameObject:
   - component: {fileID: 8220784171291825448}
   - component: {fileID: 8222865645152781032}
   - component: {fileID: 4335340027643332512}
-  - component: {fileID: 3357754053487040772}
+  - component: {fileID: 5069361713549444511}
   m_Layer: 0
   m_Name: BlueBalls_0 (1)
   m_TagString: Untagged
@@ -621,8 +605,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!233 &3357754053487040772
-HingeJoint2D:
+--- !u!231 &5069361713549444511
+SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -634,17 +618,13 @@ HingeJoint2D:
   m_ConnectedRigidBody: {fileID: 9097853879684885538}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0, y: -0.1}
-  m_ConnectedAnchor: {x: 0, y: 0.099999994}
-  m_UseMotor: 0
-  m_Motor:
-    m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
-  m_UseLimits: 0
-  m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_AutoConfigureDistance: 1
+  m_Distance: 0.19999999
+  m_DampingRatio: 0
+  m_Frequency: 1
 --- !u!1 &3924147715518750863
 GameObject:
   m_ObjectHideFlags: 0
@@ -656,7 +636,7 @@ GameObject:
   - component: {fileID: 6399344589756193690}
   - component: {fileID: 6316830967655880110}
   - component: {fileID: 6146044123561526383}
-  - component: {fileID: 3472473933495442855}
+  - component: {fileID: 7440652106516055488}
   m_Layer: 0
   m_Name: BlueBalls_0 (4)
   m_TagString: Untagged
@@ -750,8 +730,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!233 &3472473933495442855
-HingeJoint2D:
+--- !u!231 &7440652106516055488
+SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -763,17 +743,13 @@ HingeJoint2D:
   m_ConnectedRigidBody: {fileID: 1174717472627923852}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0, y: -0.1}
-  m_ConnectedAnchor: {x: 0, y: 0.099999905}
-  m_UseMotor: 0
-  m_Motor:
-    m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
-  m_UseLimits: 0
-  m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_AutoConfigureDistance: 1
+  m_Distance: 0.19999993
+  m_DampingRatio: 0
+  m_Frequency: 1
 --- !u!1 &4369069321813219531
 GameObject:
   m_ObjectHideFlags: 0
@@ -785,7 +761,7 @@ GameObject:
   - component: {fileID: 5351326159999739099}
   - component: {fileID: 1184401626644953159}
   - component: {fileID: 2460996160956790218}
-  - component: {fileID: 3179020987017870052}
+  - component: {fileID: 2653553058410681857}
   m_Layer: 0
   m_Name: BlueBalls_0 (9)
   m_TagString: Untagged
@@ -879,8 +855,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!233 &3179020987017870052
-HingeJoint2D:
+--- !u!231 &2653553058410681857
+SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -892,17 +868,13 @@ HingeJoint2D:
   m_ConnectedRigidBody: {fileID: 3977965044271577874}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0, y: -0.1}
-  m_ConnectedAnchor: {x: 0, y: 0.099999905}
-  m_UseMotor: 0
-  m_Motor:
-    m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
-  m_UseLimits: 0
-  m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_AutoConfigureDistance: 1
+  m_Distance: 0.19999993
+  m_DampingRatio: 0
+  m_Frequency: 1
 --- !u!1 &6586942323484015568
 GameObject:
   m_ObjectHideFlags: 0
@@ -914,7 +886,7 @@ GameObject:
   - component: {fileID: 7585838931692351272}
   - component: {fileID: 688498182223703336}
   - component: {fileID: 2311354592437403736}
-  - component: {fileID: 8062043487011182286}
+  - component: {fileID: 839923322074757299}
   m_Layer: 0
   m_Name: BlueBalls_0 (5)
   m_TagString: Untagged
@@ -1008,8 +980,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!233 &8062043487011182286
-HingeJoint2D:
+--- !u!231 &839923322074757299
+SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1021,17 +993,13 @@ HingeJoint2D:
   m_ConnectedRigidBody: {fileID: 6146044123561526383}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0, y: -0.1}
-  m_ConnectedAnchor: {x: 0, y: 0.100000024}
-  m_UseMotor: 0
-  m_Motor:
-    m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
-  m_UseLimits: 0
-  m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_AutoConfigureDistance: 1
+  m_Distance: 0.20000005
+  m_DampingRatio: 0
+  m_Frequency: 1
 --- !u!1 &7375439023869995563
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,7 +1016,7 @@ GameObject:
   - component: {fileID: 8923716766534186183}
   m_Layer: 0
   m_Name: AlienType6
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1181,7 +1149,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7375439023869995563}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -1230,7 +1198,7 @@ GameObject:
   - component: {fileID: 5572766845823240356}
   - component: {fileID: 350936410821583178}
   - component: {fileID: 1174717472627923852}
-  - component: {fileID: 9095968663955327764}
+  - component: {fileID: 8582390453979614628}
   m_Layer: 0
   m_Name: BlueBalls_0 (3)
   m_TagString: Untagged
@@ -1324,8 +1292,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!233 &9095968663955327764
-HingeJoint2D:
+--- !u!231 &8582390453979614628
+SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1337,17 +1305,13 @@ HingeJoint2D:
   m_ConnectedRigidBody: {fileID: 2809520066121663942}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0, y: -0.1}
-  m_ConnectedAnchor: {x: 0, y: 0.100000024}
-  m_UseMotor: 0
-  m_Motor:
-    m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
-  m_UseLimits: 0
-  m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_AutoConfigureDistance: 1
+  m_Distance: 0.20000005
+  m_DampingRatio: 0
+  m_Frequency: 1
 --- !u!1 &8956087787660924687
 GameObject:
   m_ObjectHideFlags: 0
@@ -1359,7 +1323,7 @@ GameObject:
   - component: {fileID: 5747642373168693713}
   - component: {fileID: 1369751147640679977}
   - component: {fileID: 2966066472682345188}
-  - component: {fileID: 2496652717280390788}
+  - component: {fileID: 1626197119382919851}
   m_Layer: 0
   m_Name: BlueBalls_0 (7)
   m_TagString: Untagged
@@ -1453,8 +1417,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!233 &2496652717280390788
-HingeJoint2D:
+--- !u!231 &1626197119382919851
+SpringJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1466,14 +1430,10 @@ HingeJoint2D:
   m_ConnectedRigidBody: {fileID: 7072687724409526222}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0, y: -0.1}
-  m_ConnectedAnchor: {x: 0, y: 0.099999905}
-  m_UseMotor: 0
-  m_Motor:
-    m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
-  m_UseLimits: 0
-  m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_AutoConfigureDistance: 1
+  m_Distance: 0.19999993
+  m_DampingRatio: 0
+  m_Frequency: 1
