@@ -10,7 +10,7 @@ public class AlienType6 : Enemy, IMovable, ISetable
     [SerializeField]
     private float distanceToPoint;
     [SerializeField]
-    private Vector2 movePoint;
+    public Vector2 movePoint;
     public float rotationSpeed;
     
     void Start()
