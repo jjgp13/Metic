@@ -801,32 +801,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 552125643}
   m_CullTransparentMesh: 0
---- !u!1 &651438513 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4369069321813219531, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1869137894}
-  m_PrefabAsset: {fileID: 0}
---- !u!231 &651438515
-SpringJoint2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 651438513}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 0}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0}
-  m_AutoConfigureDistance: 1
-  m_Distance: 7.31242
-  m_DampingRatio: 0
-  m_Frequency: 1
 --- !u!1 &654985491
 GameObject:
   m_ObjectHideFlags: 0
@@ -989,32 +963,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 675119031}
   m_CullTransparentMesh: 0
---- !u!1 &694933591 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 558677514973276499, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1869137894}
-  m_PrefabAsset: {fileID: 0}
---- !u!231 &694933593
-SpringJoint2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 694933591}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 1043610397}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0}
-  m_AutoConfigureDistance: 1
-  m_Distance: 0.20000029
-  m_DampingRatio: 0
-  m_Frequency: 1
 --- !u!1 &710717623
 GameObject:
   m_ObjectHideFlags: 0
@@ -1092,68 +1040,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 710717623}
   m_CullTransparentMesh: 0
---- !u!1 &733779118 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 79459956743121309, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1869137894}
-  m_PrefabAsset: {fileID: 0}
---- !u!232 &733779120
-DistanceJoint2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 733779118}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 0}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0}
-  m_AutoConfigureDistance: 1
-  m_Distance: 7.1126604
-  m_MaxDistanceOnly: 0
---- !u!1 &735407854 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3924147715518750863, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1869137894}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &735407855 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 6146044123561526383, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1869137894}
-  m_PrefabAsset: {fileID: 0}
---- !u!232 &735407856
-DistanceJoint2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 735407854}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 2026063389}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0}
-  m_AutoConfigureDistance: 1
-  m_Distance: 0.20000029
-  m_MaxDistanceOnly: 0
---- !u!50 &738571471 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 1317889210928119720, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1869137894}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &812558142
 GameObject:
   m_ObjectHideFlags: 0
@@ -1529,50 +1415,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 925402337}
   m_CullTransparentMesh: 0
---- !u!1 &955040999 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1386012034423173993, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1869137894}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &955041000 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 9097853879684885538, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1869137894}
-  m_PrefabAsset: {fileID: 0}
---- !u!231 &955041001
-SpringJoint2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 955040999}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 738571471}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0}
-  m_AutoConfigureDistance: 0
-  m_Distance: 0.25
-  m_DampingRatio: 0.42
-  m_Frequency: 10
---- !u!114 &955041004
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 955040999}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4013161026b63f24c880ccf2ab15f80a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &980818740
 GameObject:
   m_ObjectHideFlags: 0
@@ -1650,32 +1492,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 980818740}
   m_CullTransparentMesh: 0
---- !u!1 &994191743 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8956087787660924687, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1869137894}
-  m_PrefabAsset: {fileID: 0}
---- !u!231 &994191745
-SpringJoint2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 994191743}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 0}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0}
-  m_AutoConfigureDistance: 1
-  m_Distance: 6.912915
-  m_DampingRatio: 0
-  m_Frequency: 1
 --- !u!1 &995562415
 GameObject:
   m_ObjectHideFlags: 0
@@ -1806,38 +1622,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 995562415}
   m_CullTransparentMesh: 0
---- !u!1 &1043610396 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3537086150707558423, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1869137894}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &1043610397 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 4335340027643332512, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1869137894}
-  m_PrefabAsset: {fileID: 0}
---- !u!231 &1043610398
-SpringJoint2D:
+--- !u!1001 &1061328563
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1043610396}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 955041000}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0}
-  m_AutoConfigureDistance: 1
-  m_Distance: 0.19999981
-  m_DampingRatio: 0
-  m_Frequency: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7375439023869995563, guid: 2c101118cbe73dd449ad9f5da2d152a4,
+        type: 3}
+      propertyPath: m_Name
+      value: AlienType6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936818675494533820, guid: 2c101118cbe73dd449ad9f5da2d152a4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.06760594
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936818675494533820, guid: 2c101118cbe73dd449ad9f5da2d152a4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.574233
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936818675494533820, guid: 2c101118cbe73dd449ad9f5da2d152a4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936818675494533820, guid: 2c101118cbe73dd449ad9f5da2d152a4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936818675494533820, guid: 2c101118cbe73dd449ad9f5da2d152a4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936818675494533820, guid: 2c101118cbe73dd449ad9f5da2d152a4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936818675494533820, guid: 2c101118cbe73dd449ad9f5da2d152a4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936818675494533820, guid: 2c101118cbe73dd449ad9f5da2d152a4,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936818675494533820, guid: 2c101118cbe73dd449ad9f5da2d152a4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936818675494533820, guid: 2c101118cbe73dd449ad9f5da2d152a4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936818675494533820, guid: 2c101118cbe73dd449ad9f5da2d152a4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2c101118cbe73dd449ad9f5da2d152a4, type: 3}
 --- !u!1 &1168360016
 GameObject:
   m_ObjectHideFlags: 0
@@ -2436,37 +2289,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1362150607}
   m_CullTransparentMesh: 0
---- !u!1 &1403699632 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6586942323484015568, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1869137894}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &1403699633 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 2311354592437403736, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1869137894}
-  m_PrefabAsset: {fileID: 0}
---- !u!232 &1403699634
-DistanceJoint2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1403699632}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 735407855}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0}
-  m_AutoConfigureDistance: 1
-  m_Distance: 0.19999981
-  m_MaxDistanceOnly: 0
 --- !u!1 &1469158290
 GameObject:
   m_ObjectHideFlags: 0
@@ -3084,480 +2906,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
---- !u!1001 &1869137894
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 88830518184026835, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_Distance
-      value: 1.8499999
-      objectReference: {fileID: 0}
-    - target: {fileID: 88830518184026835, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_DampingRatio
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 88830518184026835, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_AutoConfigureDistance
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 88830518184026835, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_ConnectedRigidBody
-      value: 
-      objectReference: {fileID: 738571471}
-    - target: {fileID: 839923322074757299, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_Distance
-      value: 1.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 839923322074757299, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_DampingRatio
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 839923322074757299, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_AutoConfigureDistance
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 839923322074757299, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_ConnectedRigidBody
-      value: 
-      objectReference: {fileID: 738571471}
-    - target: {fileID: 1123215462464111800, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: 0.099999905
-      objectReference: {fileID: 0}
-    - target: {fileID: 1174717472627923852, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_UseAutoMass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1174717472627923852, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_GravityScale
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1626197119382919851, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_Distance
-      value: 1.6500001
-      objectReference: {fileID: 0}
-    - target: {fileID: 1626197119382919851, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_DampingRatio
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1626197119382919851, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_AutoConfigureDistance
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1626197119382919851, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_ConnectedRigidBody
-      value: 
-      objectReference: {fileID: 738571471}
-    - target: {fileID: 2311354592437403736, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_UseAutoMass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2311354592437403736, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_GravityScale
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2460996160956790218, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_UseAutoMass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2460996160956790218, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_Mass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2460996160956790218, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_GravityScale
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2496652717280390788, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: 0.10000038
-      objectReference: {fileID: 0}
-    - target: {fileID: 2653553058410681857, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_Distance
-      value: 2.0500002
-      objectReference: {fileID: 0}
-    - target: {fileID: 2653553058410681857, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_AutoConfigureDistance
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2653553058410681857, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_DampingRatio
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2653553058410681857, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_ConnectedRigidBody
-      value: 
-      objectReference: {fileID: 738571471}
-    - target: {fileID: 2809520066121663942, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_UseAutoMass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2809520066121663942, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_GravityScale
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2966066472682345188, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_UseAutoMass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2966066472682345188, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_GravityScale
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3179020987017870052, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: 0.10000038
-      objectReference: {fileID: 0}
-    - target: {fileID: 3357754053487040772, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: 0.099999905
-      objectReference: {fileID: 0}
-    - target: {fileID: 3386127289718234640, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_Distance
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 3386127289718234640, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_AutoConfigureDistance
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3386127289718234640, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_DampingRatio
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3472473933495442855, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: 0.10000038
-      objectReference: {fileID: 0}
-    - target: {fileID: 3977965044271577874, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_UseAutoMass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3977965044271577874, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_GravityScale
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4335340027643332512, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_UseAutoMass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4335340027643332512, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_GravityScale
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749178417901776291, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_Distance
-      value: 1.4499998
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749178417901776291, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_DampingRatio
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749178417901776291, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_AutoConfigureDistance
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4749178417901776291, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_ConnectedRigidBody
-      value: 
-      objectReference: {fileID: 738571471}
-    - target: {fileID: 5069361713549444511, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_Distance
-      value: 0.4499998
-      objectReference: {fileID: 0}
-    - target: {fileID: 5069361713549444511, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_DampingRatio
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5069361713549444511, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_AutoConfigureDistance
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5069361713549444511, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_ConnectedRigidBody
-      value: 
-      objectReference: {fileID: 738571471}
-    - target: {fileID: 6146044123561526383, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_UseAutoMass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6146044123561526383, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_GravityScale
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6341957987121429740, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: 0.099999905
-      objectReference: {fileID: 0}
-    - target: {fileID: 7072687724409526222, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_UseAutoMass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7072687724409526222, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_GravityScale
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7375439023869995563, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_Name
-      value: AlienType6
-      objectReference: {fileID: 0}
-    - target: {fileID: 7375439023869995563, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 7440652106516055488, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_Distance
-      value: 1.0500002
-      objectReference: {fileID: 0}
-    - target: {fileID: 7440652106516055488, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_DampingRatio
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7440652106516055488, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_AutoConfigureDistance
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7440652106516055488, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_ConnectedRigidBody
-      value: 
-      objectReference: {fileID: 738571471}
-    - target: {fileID: 8047576126964789730, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_Distance
-      value: 0.6500001
-      objectReference: {fileID: 0}
-    - target: {fileID: 8047576126964789730, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_DampingRatio
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8047576126964789730, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_AutoConfigureDistance
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8047576126964789730, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_ConnectedRigidBody
-      value: 
-      objectReference: {fileID: 738571471}
-    - target: {fileID: 8062043487011182286, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: 0.099999905
-      objectReference: {fileID: 0}
-    - target: {fileID: 8225915585790948800, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: 0.10000038
-      objectReference: {fileID: 0}
-    - target: {fileID: 8255650040490361135, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.x
-      value: 0.35381874
-      objectReference: {fileID: 0}
-    - target: {fileID: 8255650040490361135, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: 5.5038548
-      objectReference: {fileID: 0}
-    - target: {fileID: 8582390453979614628, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_Distance
-      value: 0.8499999
-      objectReference: {fileID: 0}
-    - target: {fileID: 8582390453979614628, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_DampingRatio
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8582390453979614628, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_AutoConfigureDistance
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8582390453979614628, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_ConnectedRigidBody
-      value: 
-      objectReference: {fileID: 738571471}
-    - target: {fileID: 8923716766534186183, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: moveSpeed
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8936818675494533820, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.35381874
-      objectReference: {fileID: 0}
-    - target: {fileID: 8936818675494533820, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.2538548
-      objectReference: {fileID: 0}
-    - target: {fileID: 8936818675494533820, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8936818675494533820, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8936818675494533820, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8936818675494533820, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8936818675494533820, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8936818675494533820, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8936818675494533820, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8936818675494533820, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8936818675494533820, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9095968663955327764, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: 0.099999905
-      objectReference: {fileID: 0}
-    - target: {fileID: 9097853879684885538, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_UseAutoMass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9097853879684885538, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_Mass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9097853879684885538, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-        type: 3}
-      propertyPath: m_GravityScale
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5069361713549444511, guid: 2c101118cbe73dd449ad9f5da2d152a4, type: 3}
-    - {fileID: 839923322074757299, guid: 2c101118cbe73dd449ad9f5da2d152a4, type: 3}
-    - {fileID: 3386127289718234640, guid: 2c101118cbe73dd449ad9f5da2d152a4, type: 3}
-    - {fileID: 7440652106516055488, guid: 2c101118cbe73dd449ad9f5da2d152a4, type: 3}
-    - {fileID: 1626197119382919851, guid: 2c101118cbe73dd449ad9f5da2d152a4, type: 3}
-    - {fileID: 8582390453979614628, guid: 2c101118cbe73dd449ad9f5da2d152a4, type: 3}
-    - {fileID: 2653553058410681857, guid: 2c101118cbe73dd449ad9f5da2d152a4, type: 3}
-    - {fileID: 88830518184026835, guid: 2c101118cbe73dd449ad9f5da2d152a4, type: 3}
-    - {fileID: 8047576126964789730, guid: 2c101118cbe73dd449ad9f5da2d152a4, type: 3}
-    - {fileID: 4749178417901776291, guid: 2c101118cbe73dd449ad9f5da2d152a4, type: 3}
-  m_SourcePrefab: {fileID: 100100000, guid: 2c101118cbe73dd449ad9f5da2d152a4, type: 3}
---- !u!1 &1959478984 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1742252082149790877, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1869137894}
-  m_PrefabAsset: {fileID: 0}
---- !u!232 &1959478986
-DistanceJoint2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1959478984}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 1403699633}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0}
-  m_AutoConfigureDistance: 1
-  m_Distance: 0.19999981
-  m_MaxDistanceOnly: 0
 --- !u!1 &1964294806
 GameObject:
   m_ObjectHideFlags: 0
@@ -4042,37 +3390,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &2026063388 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8249023842039144910, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1869137894}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &2026063389 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 1174717472627923852, guid: 2c101118cbe73dd449ad9f5da2d152a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1869137894}
-  m_PrefabAsset: {fileID: 0}
---- !u!232 &2026063390
-DistanceJoint2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2026063388}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 0}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0}
-  m_AutoConfigureDistance: 1
-  m_Distance: 6.114101
-  m_MaxDistanceOnly: 0
 --- !u!1 &2033657111
 GameObject:
   m_ObjectHideFlags: 0

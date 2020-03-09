@@ -12,13 +12,22 @@ public class OppositeForce : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        parent = transform.GetComponentInParent<AlienType6>();
+        parent = transform.parent.GetComponent<AlienType6>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        FaceUp();
         Vector2 dir = rb.position - parent.movePoint;
         rb.velocity = dir.normalized;
+    }
+    /// <summary>
+    /// Rotate to always set the number vertcial
+    /// </summary>
+    private void FaceUp()
+    {
+        float angle = Vector2.Angle(new Vector2(0f, transform.rotation.z), Vector2.up);
+        transform.Rotate(Vector3.forward, angle);
     }
 }

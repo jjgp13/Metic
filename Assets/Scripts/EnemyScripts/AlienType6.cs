@@ -34,8 +34,13 @@ public class AlienType6 : Enemy, IMovable, ISetable
     {
         //This will be given the game difficulty.
         numberOfBalls = Random.Range(2, 11);
+
         //Set balls values
-        SetBallsRandom();
+        SetBallsRandom(numberOfBalls);
+
+        //Set move speed, given the number of balls.
+        //Speed should be greater if there are more balls.
+        SetMoveSpeed(numberOfBalls);
 
         //Deactive remain balls
         for (int i = numberOfBalls; i < 10; i++)
@@ -44,14 +49,9 @@ public class AlienType6 : Enemy, IMovable, ISetable
 
     public void EnemyMovement()
     {
-        //moving with transform
-        transform.Translate(0, Vector2.down.y * moveSpeed * Time.deltaTime, 0f);
+        
 
-        //moving with rb
-        //Vector2 dir = movePoint - (Vector2)transform.position;
-        //rb.MovePosition(rb.position + dir.normalized * moveSpeed * Time.deltaTime);
-        
-        
+
         //If there are points in the Queue, select one and go to it.
         //This will give the player change to make the calculus to destroy the enemy
         if (movePoints.Count > 0)
@@ -64,6 +64,7 @@ public class AlienType6 : Enemy, IMovable, ISetable
         }
         else
         {
+            movePoint = GetPlayerPosition();
             MoveToPoint(GetPlayerPosition());
         }
     }
@@ -71,15 +72,17 @@ public class AlienType6 : Enemy, IMovable, ISetable
     void MoveToPoint(Vector2 point)
     {
         Debug.DrawLine(transform.position, point, Color.white);
-        Vector2 dir = point - (Vector2)transform.position;
-        float angle = Vector2.Angle(dir, Vector2.down);
-        if (transform.position.x > point.x)
-            angle *= -1;
-        //rotating with transform
-        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, 0, angle), rotationSpeed * Time.deltaTime);
+
+        Vector2 dir = movePoint - (Vector2)transform.position;
+
+        //moving with rb
+        //rb.MovePosition(rb.position + dir.normalized * moveSpeed * Time.deltaTime);
+        rb.MovePosition(rb.position + (-(Vector2)transform.up * moveSpeed * Time.deltaTime));
 
         //Rotating with rb
-        //rb.MoveRotation(Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, 0, angle), rotationSpeed * Time.deltaTime));
+        float angle = Vector2.Angle(dir, Vector2.down);
+        if (transform.position.x > point.x) angle *= -1;
+        rb.MoveRotation(Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, 0, angle), rotationSpeed * Time.deltaTime));
     }
 
     private void SetPointsToMove(int pointsCount)
@@ -88,9 +91,9 @@ public class AlienType6 : Enemy, IMovable, ISetable
             movePoints.Enqueue(new Vector2(Random.Range(-2.6f, 2.6f), Random.Range(2f, 4f)));
     }
 
-    private void SetBallsRandom()
+    private void SetBallsRandom(int balls)
     {
-        for (int i = 0; i < numberOfBalls; i++)
+        for (int i = 0; i < balls; i++)
         {
             int val = Random.Range(0, 9);
             result += val + 1;
@@ -98,4 +101,10 @@ public class AlienType6 : Enemy, IMovable, ISetable
         }
     }
 
+    private void SetMoveSpeed(int balls)
+    {
+        if (balls < 4) moveSpeed = 1f;
+        else if (balls >= 4 && balls < 7) moveSpeed = 2f;
+        else moveSpeed = 3f;
+    }
 }
