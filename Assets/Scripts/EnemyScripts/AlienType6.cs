@@ -5,7 +5,7 @@ using UnityEngine;
 public class AlienType6 : Enemy, IMovable, ISetable
 {
     
-    public Queue<Vector2> movePoints = new Queue<Vector2>();
+    public Stack<Vector2> movePoints = new Stack<Vector2>();
     [Header("Alien Type 6 properties")]
     [SerializeField]
     private float distanceToPoint;
@@ -18,7 +18,7 @@ public class AlienType6 : Enemy, IMovable, ISetable
     {
         rb = GetComponent<Rigidbody2D>();
         SetEnemyResult();
-        SetPointsToMove(Random.Range(5, 10));
+        SetPointsToMove(numberOfBalls);
 
         distanceToPoint = 0f;
         movePoint = Vector2.zero;
@@ -50,14 +50,12 @@ public class AlienType6 : Enemy, IMovable, ISetable
     public void EnemyMovement()
     {
         
-
-
         //If there are points in the Queue, select one and go to it.
         //This will give the player change to make the calculus to destroy the enemy
         if (movePoints.Count > 0)
         {
             if (distanceToPoint < 0.1f)
-                movePoint = movePoints.Dequeue();
+                movePoint = movePoints.Pop();
 
             MoveToPoint(movePoint);
             distanceToPoint = Vector2.Distance(transform.position, movePoint);
@@ -76,7 +74,6 @@ public class AlienType6 : Enemy, IMovable, ISetable
         Vector2 dir = movePoint - (Vector2)transform.position;
 
         //moving with rb
-        //rb.MovePosition(rb.position + dir.normalized * moveSpeed * Time.deltaTime);
         rb.MovePosition(rb.position + (-(Vector2)transform.up * moveSpeed * Time.deltaTime));
 
         //Rotating with rb
@@ -85,10 +82,26 @@ public class AlienType6 : Enemy, IMovable, ISetable
         rb.MoveRotation(Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, 0, angle), rotationSpeed * Time.deltaTime));
     }
 
-    private void SetPointsToMove(int pointsCount)
+    private void SetPointsToMove(int balls)
     {
-        for (int i = 0; i < pointsCount; i++)
-            movePoints.Enqueue(new Vector2(Random.Range(-2.6f, 2.6f), Random.Range(2f, 4f)));
+        int pointsCount = 0;
+        if (balls < 4)
+            pointsCount = 2;
+        else if (balls < 8)
+            pointsCount = 4;
+        else
+            pointsCount = 6;
+
+        Vector2 newPoint;
+        while (movePoints.Count <= pointsCount)
+        {
+            newPoint = new Vector2(Random.Range(-2.6f, 2.6f), Random.Range(2f, 4f));
+            if (movePoints.Count == 0)
+                movePoints.Push(newPoint);
+                
+            if (Vector2.Distance(movePoints.Peek(), newPoint) > 2f)
+                movePoints.Push(newPoint);
+        }
     }
 
     private void SetBallsRandom(int balls)
@@ -103,8 +116,8 @@ public class AlienType6 : Enemy, IMovable, ISetable
 
     private void SetMoveSpeed(int balls)
     {
-        if (balls < 4) moveSpeed = 1f;
+        if (balls < 4) moveSpeed = 1.5f;
         else if (balls >= 4 && balls < 7) moveSpeed = 2f;
-        else moveSpeed = 3f;
+        else moveSpeed = 2.5f;
     }
 }

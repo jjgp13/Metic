@@ -27,7 +27,7 @@ public class OppositeForce : MonoBehaviour
     /// </summary>
     private void FaceUp()
     {
-        float angle = Vector2.Angle(new Vector2(0f, transform.rotation.z), Vector2.up);
-        transform.Rotate(Vector3.forward, angle);
+        //float angle = Vector2.Angle(new Vector2(0f, transform.rotation.z), Vector2.up);
+        transform.Rotate(Vector3.forward, 0f);
     }
 }

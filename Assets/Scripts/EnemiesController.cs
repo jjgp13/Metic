@@ -31,14 +31,14 @@ public class EnemiesController : MonoBehaviour
         if (spawnTimer <= 0)
         {
             spawnTimer = timeToSpawnEnemy;
-            //SpawnEnemy();
+            SpawnEnemy();
         }
     }
 
     private void SpawnEnemy()
     {
-        //int enemyType = Random.Range(0, enemyTypes.Length);
-        Instantiate(enemyTypes[0], SpawnPosition(), Quaternion.identity);
+        int enemyType = Random.Range(0, enemyTypes.Length);
+        Instantiate(enemyTypes[enemyType], SpawnPosition(), Quaternion.identity);
     }
 
     private Vector2 SpawnPosition()
