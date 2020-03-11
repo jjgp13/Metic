@@ -1144,11 +1144,6 @@ MonoBehaviour:
   spawnTimer: 0
   enemyTypes:
   - {fileID: 1408628803425110460, guid: 02119c6f3e863f143a07e91afaf5e42c, type: 3}
-  - {fileID: 2389386106890880715, guid: 7f351b63441c4d9469e9e7dcd8740421, type: 3}
-  - {fileID: 438328967931482676, guid: 13d1620778e65c54ab8d931bad3f4be7, type: 3}
-  - {fileID: 6311956113744279590, guid: dc1f4a452545f954d9ba03dd99f0c0ce, type: 3}
-  - {fileID: 5494778635922520346, guid: 290b773100df14c44aceb678fb620c98, type: 3}
-  - {fileID: 7375439023869995563, guid: 2c101118cbe73dd449ad9f5da2d152a4, type: 3}
 --- !u!61 &812558146
 BoxCollider2D:
   m_ObjectHideFlags: 0

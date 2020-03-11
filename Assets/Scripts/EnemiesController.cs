@@ -44,7 +44,7 @@ public class EnemiesController : MonoBehaviour
     private Vector2 SpawnPosition()
     {
         float xPos = Random.Range(-2.4f, 2.4f);
-        float yPos = Random.Range(5f, 7f);
+        float yPos = Random.Range(5.25f, 5.5f);
         return new Vector2(xPos, yPos);
     }
 
@@ -55,13 +55,9 @@ public class EnemiesController : MonoBehaviour
             collision.gameObject.GetComponent<Enemy>().isVisible = true;
             int enemyResult = collision.gameObject.GetComponent<Enemy>().result;
             if (enemiesInField.ContainsKey(enemyResult))
-            {
                 Destroy(collision.gameObject);
-            }
             else
-            {
                 enemiesInField.Add(enemyResult, collision.gameObject);
-            }
         }
     }
 
