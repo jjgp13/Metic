@@ -28,7 +28,7 @@ public class AlienType2 : Enemy, IMovable, ISetable
     {
         for (int i = 0; i < numberOfBalls; i++)
         {
-            //From 1 to 9 -> 0 is 1 and 8 is nine
+            //From 1 to 9 -> 0 is 1 and 8 is 9
             int tempNum = Random.Range(0, 9);
             transform.GetChild(i).GetComponent<SpriteRenderer>().sprite = NumbersController._instance.blueNumbers[tempNum];
             result += tempNum + 1;
@@ -37,6 +37,6 @@ public class AlienType2 : Enemy, IMovable, ISetable
 
     public void EnemyMovement()
     {
-        transform.Translate(Vector2.down * moveSpeed * Time.deltaTime);
+        rb.MovePosition(rb.position + Vector2.down * moveSpeed * Time.deltaTime);
     }
 }

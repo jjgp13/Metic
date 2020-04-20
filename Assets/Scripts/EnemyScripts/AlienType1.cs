@@ -39,11 +39,11 @@ public class AlienType1 : Enemy, IMovable, ISetable
     public void EnemyMovement()
     {
         if (transform.position.y > 1)
-            transform.Translate(Vector2.down * moveSpeed * Time.deltaTime);
+            rb.MovePosition(rb.position + Vector2.down * moveSpeed * Time.deltaTime);        
         else
         {
             Vector2 dir = GetPlayerPosition() - (Vector2)transform.position;
-            transform.Translate(dir.normalized * moveSpeed * Time.deltaTime);
+            rb.MovePosition(rb.position + dir.normalized * moveSpeed * Time.deltaTime);
         }
     }
 

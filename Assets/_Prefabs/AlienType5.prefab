@@ -156,7 +156,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   result: 0
-  moveSpeed: 1
+  level: 1
+  moveSpeed: 0.75
   pointsMultiplier: 2000
   pointsForKill: 0
   isVisible: 0

@@ -58,7 +58,7 @@ public class PlayerMovement : MonoBehaviour
         Instantiate(bulletPrefab, spawnBulletPosition.position, Quaternion.identity);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
@@ -67,6 +67,7 @@ public class PlayerMovement : MonoBehaviour
                 Instantiate(playerExplosion, transform.position, Quaternion.identity);
                 Destroy(collision.gameObject);
                 Destroy(gameObject);
+                GameOverController._instance.GameOverAnimation();
                 return;
             }
             lifes--;

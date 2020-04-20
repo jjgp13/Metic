@@ -405,6 +405,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   result: 0
+  level: 1
   moveSpeed: 0.1
   pointsMultiplier: 4000
   pointsForKill: 0

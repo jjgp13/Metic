@@ -11,8 +11,7 @@ public class AlienType6 : Enemy, IMovable, ISetable
     private float distanceToPoint;
     [SerializeField]
     public Vector2 movePoint;
-    public float rotationSpeed;
-    private Rigidbody2D rb;
+    public float rotationSpeed;    
     
     void Start()
     {
@@ -33,7 +32,7 @@ public class AlienType6 : Enemy, IMovable, ISetable
     public void SetEnemyResult()
     {
         //This will be given the game difficulty.
-        numberOfBalls = Random.Range(2, 11);
+        numberOfBalls = Random.Range(4, 11);
 
         //Set balls values
         SetBallsRandom(numberOfBalls);
@@ -117,7 +116,7 @@ public class AlienType6 : Enemy, IMovable, ISetable
     private void SetMoveSpeed(int balls)
     {
         if (balls < 4) moveSpeed = 1.5f;
-        else if (balls >= 4 && balls < 7) moveSpeed = 2f;
-        else moveSpeed = 2.5f;
+        else if (balls >= 4 && balls < 7) moveSpeed = 1.5f;
+        else moveSpeed = 2f;
     }
 }

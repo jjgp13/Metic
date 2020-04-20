@@ -158,6 +158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   result: 0
+  level: 1
   moveSpeed: 0.5
   pointsMultiplier: 1500
   pointsForKill: 0

@@ -11,6 +11,14 @@ public class Enemy : MonoBehaviour
     
     protected GameObject player;
 
+    protected Rigidbody2D rb;    
+
+    public enum EnemyLevel
+    {
+        easy,
+        mid,
+        hard
+    }
 
     public enum Side
     {
@@ -19,6 +27,7 @@ public class Enemy : MonoBehaviour
     }
 
     [Header("Inherited properties")]
+    public EnemyLevel level;
     public float moveSpeed;
     [SerializeField]
     protected int pointsMultiplier;
@@ -40,6 +49,8 @@ public class Enemy : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         //Get canvas
         canvas = FindObjectOfType<Canvas>();
+        //Get rb
+        rb = GetComponent<Rigidbody2D>();
     }
 
     protected void SetEnemyPoints()
@@ -64,7 +75,10 @@ public class Enemy : MonoBehaviour
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }
+    }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
         if (collision.gameObject.CompareTag("Player"))
         {
             EnemiesController._instance.enemiesInField.Remove(result);
