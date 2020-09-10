@@ -9,6 +9,8 @@ public class NumbersController : MonoBehaviour
 
     public int result;
     public Text resultText;
+    [SerializeField]
+    private GameObject[] GameUI;
 
     [Header("Reference to sprite with ball numebers")]
     public Sprite[] blueNumbers = new Sprite[10];
@@ -43,6 +45,17 @@ public class NumbersController : MonoBehaviour
             string doubleDigitResult = string.Concat(resultText.text, value.ToString());
             resultText.text = doubleDigitResult;
             result = int.Parse(doubleDigitResult);
+        }
+    }
+
+    /// <summary>
+    /// Hides buttons and scores
+    /// </summary>
+    public void HideGameUI()
+    {
+        foreach (var item in GameUI)
+        {
+            item.SetActive(false);
         }
     }
 }

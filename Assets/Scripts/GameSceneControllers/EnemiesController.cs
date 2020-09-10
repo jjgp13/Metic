@@ -1,11 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Schema;
 using UnityEngine;
+
 
 public class EnemiesController : MonoBehaviour
 {
 
     public static EnemiesController _instance;
+
+    [SerializeField]
+    private float spawnEnemyXLimit;
+    [SerializeField]
+    private float spawnEnemyYLimit;
 
     [Header("Spawn times")]
     public float easyLevelEnemyTime;
@@ -17,7 +24,12 @@ public class EnemiesController : MonoBehaviour
     private float midLevelSpawnTimer;
     [SerializeField]
     private float hardLevelSpawnTimer;
+
+    /// <summary>
+    /// This will help to no overlap enemies on the screen, there should be a minumum distance between spawn positions.
+    /// </summary>
     private Vector2 lastSpawnEnemyPosition;
+
 
     [Header("Enemy array")]
     public GameObject[] easyLevelEnemies;
@@ -25,16 +37,21 @@ public class EnemiesController : MonoBehaviour
     public GameObject[] hardLevelEnemies;
     public Dictionary<int, GameObject> enemiesInField;
 
+
+    public bool hasGameStart;
+
     public void Awake() => _instance = this;
+
 
     // Start is called before the first frame update
     void Start()
     {
         enemiesInField = new Dictionary<int, GameObject>();
-        easyLevelSpawnTimer = easyLevelEnemyTime;
+        easyLevelSpawnTimer = 1f;
         midLevelSpawnTimer = midLevelEnemyTime;
         hardLevelSpawnTimer = hardLevelEnemyTime;
         lastSpawnEnemyPosition = Vector2.zero;
+        hasGameStart = false;
     }
 
     // Update is called once per frame
@@ -42,13 +59,13 @@ public class EnemiesController : MonoBehaviour
     {
         //if (enemiesInField.Count == 0)
         //    SpawnEnemy(easyLevelEnemies[RandomEnemy(easyLevelEnemies.Length)]);
-
-        TimerEnemySpawn();
+        if (hasGameStart)
+            TimerEnemySpawn();
     }
 
     private void TimerEnemySpawn()
     {
-        if (GameOverController._instance.gameOver)
+        if (!GameOverController._instance.gameOver)
         {
             easyLevelSpawnTimer -= Time.deltaTime;
             if (easyLevelSpawnTimer <= 0)
@@ -86,9 +103,9 @@ public class EnemiesController : MonoBehaviour
 
     private Vector2 SpawnPosition()
     {
-        Vector2 spawnPosition = new Vector2(Random.Range(-2.4f, 2.4f), Random.Range(5.3f, 5.35f));
+        Vector2 spawnPosition = new Vector2(Random.Range(-spawnEnemyXLimit, spawnEnemyXLimit), spawnEnemyYLimit);
         while(Mathf.Abs(lastSpawnEnemyPosition.x - spawnPosition.x) < 1)
-            spawnPosition = new Vector2(Random.Range(-2.4f, 2.4f), Random.Range(5.3f, 5.35f));
+            spawnPosition = new Vector2(Random.Range(-spawnEnemyXLimit, spawnEnemyXLimit), spawnEnemyYLimit);
         lastSpawnEnemyPosition = spawnPosition;
         return spawnPosition;
     }

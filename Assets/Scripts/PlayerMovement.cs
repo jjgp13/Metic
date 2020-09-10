@@ -67,7 +67,7 @@ public class PlayerMovement : MonoBehaviour
                 Instantiate(playerExplosion, transform.position, Quaternion.identity);
                 Destroy(collision.gameObject);
                 Destroy(gameObject);
-                GameOverController._instance.GameOverAnimation();
+                GameOverController._instance.GameOver();
                 return;
             }
             lifes--;

@@ -37,6 +37,12 @@ public class AlienType2 : Enemy, IMovable, ISetable
 
     public void EnemyMovement()
     {
-        rb.MovePosition(rb.position + Vector2.down * moveSpeed * Time.deltaTime);
+        if(Vector2.Distance(GetPlayerPosition(), transform.position) > 5)
+            rb.MovePosition(rb.position + Vector2.down * moveSpeed * Time.deltaTime);
+        else
+        {
+            Vector2 dir = GetPlayerPosition() - (Vector2)transform.position;
+            rb.MovePosition(rb.position + dir.normalized * moveSpeed * Time.deltaTime);
+        }
     }
 }

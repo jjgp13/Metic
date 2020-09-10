@@ -121,7 +121,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.5
 --- !u!50 &4992510346242056888
 Rigidbody2D:
   serializedVersion: 4
@@ -165,7 +165,6 @@ MonoBehaviour:
     type: 3}
   pointsText: {fileID: 3427097577937300879, guid: ab884f40c67221243b00dc4a6a8bc899,
     type: 3}
-  canvas: {fileID: 0}
   xMovLimit: {x: -2, y: 2}
   yMovLimit: {x: 0.5, y: 4}
   distanceThreshold: 0.01

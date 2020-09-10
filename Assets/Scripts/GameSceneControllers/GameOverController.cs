@@ -12,12 +12,18 @@ public class GameOverController : MonoBehaviour
     public void Awake() => _instance = this;
 
     public bool gameOver;
+
+    public GameObject mainMenuButton;
+    public GameObject tryAgainButton;
+
     [SerializeField]
     private TextMeshProUGUI finalScoreText;
     [SerializeField]
     private Animator gameOverPanel;
     [SerializeField]
-    private Animator newHighScore;
+    private GameObject newHighScore;
+
+
 
 
     private void Start()
@@ -31,15 +37,16 @@ public class GameOverController : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
-    public void GameOverAnimation()
+    public void GameOver()
     {
         gameOver = true;
         gameOverPanel.SetTrigger("Game Over");
+        NumbersController._instance.HideGameUI();
     }
 
     public void NewHighScoreAnimation()
     {
-        newHighScore.SetTrigger("New High Score");
+        newHighScore.SetActive(true);
     }
 
     public void StartFinalScoreCoroutine()
@@ -53,10 +60,10 @@ public class GameOverController : MonoBehaviour
         int increaseScore = 0;
         while (finalScore >= 0)
         {
-            if(finalScore - 50 > 0)
+            if (finalScore - 1000 > 0)
             {
-                finalScore -= 50;
-                increaseScore += 50;
+                finalScore -= 1000;
+                increaseScore += 1000;
             }
             else
             {
@@ -68,9 +75,25 @@ public class GameOverController : MonoBehaviour
             yield return null;
         }
 
-        if(PlayerPrefs.GetInt("High Score") < ScoreController._instance.score)
+        CheckFinalScore();
+        mainMenuButton.SetActive(true);
+        tryAgainButton.SetActive(true);
+    }
+
+    public void CheckFinalScore()
+    {
+        if (PlayerPrefs.HasKey("HighScore"))
+        {
+            if (ScoreController._instance.score > PlayerPrefs.GetInt("HighScore"))
+            {
+                NewHighScoreAnimation();
+                PlayerPrefs.SetInt("HighScore", ScoreController._instance.score);
+            } 
+        }
+        else
         {
             NewHighScoreAnimation();
+            PlayerPrefs.SetInt("HighScore", ScoreController._instance.score);
         }
     }
 }

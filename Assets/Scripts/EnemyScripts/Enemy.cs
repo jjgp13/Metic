@@ -34,9 +34,12 @@ public class Enemy : MonoBehaviour
     [SerializeField]
     protected int pointsForKill;
     public bool isVisible;
+    [SerializeField]
     public GameObject enemyExplosion;
-    public TextMeshProUGUI pointsText;
-    public Canvas canvas;
+    [SerializeField]
+    private TextMeshProUGUI pointsText;
+    
+    private Canvas canvas;
 
 
     protected void Awake()
