@@ -25,7 +25,6 @@ public class GameOverController : MonoBehaviour
 
 
 
-
     private void Start()
     {
         gameOver = false;
